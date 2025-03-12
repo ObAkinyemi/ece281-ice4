@@ -77,10 +77,12 @@ architecture stoplight_fsm_arch of stoplight_fsm is
 begin
 	-- CONCURRENT STATEMENTS ----------------------------
 	-- Next state logic
-	
+    f_Q_next(0) <= (NOT f_Q(1)) AND i_C;
+    f_Q_next(1) <= (NOT f_Q(1)) AND f_Q(0) AND (NOT i_C);
+
 	
 	-- Output logic
-	
+    o_G <= (NOT f_Q(1)) AND f_Q(0);	
 	-------------------------------------------------------	
 	
 	-- PROCESSES ----------------------------------------	
@@ -94,12 +96,6 @@ begin
         end if;
     end process register_proc;
 	-------------------------------------------------------
-    Qnext(0) = Q(1) ∗ C;
-    Qnext(1) = Q(1) ∗ Q(0) ∗ C;
-
-    G = Q(1) ∗ Q(0);
-    Y = Q(1) ∗ Q(0);
-    R = Q(1) ∗ Q(0) + Q(1) ∗ Q(0);
 
 end stoplight_fsm_arch;
 
