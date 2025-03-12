@@ -83,6 +83,8 @@ begin
 	
 	-- Output logic
     o_G <= (NOT f_Q(1)) AND f_Q(0);	
+    o_Y <= f_Q(1) AND (NOT f_Q(0));
+    o_R <= (NOT f_Q(1) AND NOT f_Q(0)) OR (f_Q(1) AND f_Q(0));
 	-------------------------------------------------------	
 	
 	-- PROCESSES ----------------------------------------	
