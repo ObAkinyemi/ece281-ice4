@@ -10,7 +10,7 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="999,998 ps"></ZoomStartTime>
+      <ZoomStartTime time="999,997 ps"></ZoomStartTime>
       <ZoomEndTime time="1,000,009 ps"></ZoomEndTime>
       <Cursor1Time time="1,000,000 ps"></Cursor1Time>
    </zoom_setting>
@@ -18,7 +18,7 @@
       <NameColumnWidth column_width="261"></NameColumnWidth>
       <ValueColumnWidth column_width="124"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="6" />
+   <WVObjectSize size="7" />
    <wvobject fp_name="/stoplight_fsm_tb/w_C" type="logic">
       <obj_property name="ElementShortName">w_C</obj_property>
       <obj_property name="ObjectShortName">w_C</obj_property>
@@ -39,8 +39,12 @@
       <obj_property name="ElementShortName">k_clk_period</obj_property>
       <obj_property name="ObjectShortName">k_clk_period</obj_property>
    </wvobject>
-   <wvobject fp_name="/stoplight_fsm_tb/uut/i_C" type="logic">
-      <obj_property name="ElementShortName">i_C</obj_property>
-      <obj_property name="ObjectShortName">i_C</obj_property>
+   <wvobject fp_name="/stoplight_fsm_tb/uut/f_Q" type="array">
+      <obj_property name="ElementShortName">f_Q[1:0]</obj_property>
+      <obj_property name="ObjectShortName">f_Q[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/stoplight_fsm_tb/uut/f_Q_next" type="array">
+      <obj_property name="ElementShortName">f_Q_next[1:0]</obj_property>
+      <obj_property name="ObjectShortName">f_Q_next[1:0]</obj_property>
    </wvobject>
 </wave_config>
