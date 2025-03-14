@@ -72,7 +72,8 @@ end stoplight_fsm;
 architecture stoplight_fsm_arch of stoplight_fsm is 
 	
 	-- create register signals with default state yellow (10)
-    signal f_Q, f_Q_next : std_logic_vector(1 downto 0) := "10"; -- Default Yellow
+    signal f_Q : std_logic_vector(1 downto 0) := "10"; -- Default Yellow
+    signal f_Q_next : std_logic_vector(1 downto 0) := "10"; -- Default Yellow
 
 begin
 	-- CONCURRENT STATEMENTS ----------------------------
